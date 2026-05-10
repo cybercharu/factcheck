@@ -3,7 +3,7 @@
 A Streamlit web app that extracts factual claims from any PDF and verifies them against **live Google Search data** using **Gemini 1.5 Flash**.
 
 ## 🚀 Live Demo
-> Deploy to Streamlit Cloud and paste your URL here.
+> https://factcheck-efszvgwmcda5zjtwyzvx2n.streamlit.app/
 
 ---
 
@@ -42,37 +42,6 @@ streamlit run app.py
 ```
 
 ---
-
-## 🔑 API Key Setup
-
-Get a **free** Google Gemini API key at [aistudio.google.com/apikey](https://aistudio.google.com/apikey) — no credit card required.
-
-### Option A — `.env` file (local dev)
-```
-GOOGLE_API_KEY=AIza_your_key_here
-```
-
-### Option B — Streamlit Cloud Secrets (deployment)
-In Streamlit Cloud dashboard → App Settings → Secrets:
-```toml
-GOOGLE_API_KEY = "AIza_your_key_here"
-```
-
-### Option C — Enter in UI
-If no env/secret is set, the app shows a password input at runtime.
-
----
-
-## ☁️ Deploy to Streamlit Cloud (Free)
-
-1. Push repo to GitHub
-2. Go to [share.streamlit.io](https://share.streamlit.io)
-3. Click **New App** → select repo → set `app.py` as entry point
-4. Under **Advanced Settings → Secrets**, add your `GOOGLE_API_KEY`
-5. Click **Deploy** 🎉
-
----
-
 ## 📁 Project Structure
 ```
 factcheck-ai/
