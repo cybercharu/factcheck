@@ -304,11 +304,12 @@ if run_btn and uploaded and has_key:
 
         st.markdown(f"##  Results — {total_n} Claims Analysed")
         c1, c2, c3, c4 = st.columns(4)
-        c1.markdown(f'<div class="stat-card"><div class="stat-number" style="color:#60a5fa">{total_n}</div><div class="stat-label">Total Claims</div></div>', unsafe_allow_html=True)
-        c2.markdown(f'<div class="stat-card"><div class="stat-number" style="color:#10b981">{verified_n}</div><div class="stat-label">✅ Verified</div></div>', unsafe_allow_html=True)
-        c3.markdown(f'<div class="stat-card"><div class="stat-number" style="color:#f59e0b">{inaccurate_n}</div><div class="stat-label">⚠️ Inaccurate</div></div>', unsafe_allow_html=True)
-        c4.markdown(f'<div class="stat-card"><div class="stat-number" style="color:#ef4444">{false_n}</div><div class="stat-label">❌ False</div></div>', unsafe_allow_html=True)
- 
+       # REPLACE with these 4 lines:
+c1.markdown(f'<div class="stat-card"><div class="stat-number" style="color:#60a5fa">{total_n}</div><div class="stat-label">Total Claims</div></div>', unsafe_allow_html=True)
+c2.markdown(f'<div class="stat-card"><div class="stat-number" style="color:#10b981">{verified_n}</div><div class="stat-label">✅ Verified</div></div>', unsafe_allow_html=True)
+c3.markdown(f'<div class="stat-card"><div class="stat-number" style="color:#f59e0b">{inaccurate_n}</div><div class="stat-label">⚠️ Inaccurate</div></div>', unsafe_allow_html=True)
+c4.markdown(f'<div class="stat-card"><div class="stat-number" style="color:#ef4444">{false_n}</div><div class="stat-label">❌ False</div></div>', unsafe_allow_html=True)
+
         st.markdown("<br>", unsafe_allow_html=True)
 
         # Filter
